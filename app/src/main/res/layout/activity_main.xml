@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zachs.skimate.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/app_name1"
+        android:layout_width="325dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name1"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Mountain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_Mountain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="Mountain Search"
+        app:layout_constraintBottom_toTopOf="@+id/button_Community"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name1" />
+
+    <Button
+        android:id="@+id/button_Community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="23dp"
+        android:text="Community"
+        app:layout_constraintBottom_toTopOf="@+id/button_Friends"
+        app:layout_constraintStart_toStartOf="@+id/button_Mountain"
+        app:layout_constraintTop_toBottomOf="@+id/button_Mountain" />
+
+    <Button
+        android:id="@+id/button_Friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:layout_marginStart="10dp"
+        android:text="Friends"
+        app:layout_constraintBottom_toTopOf="@+id/button_Profile"
+        app:layout_constraintStart_toStartOf="@+id/button_Community"
+        app:layout_constraintTop_toBottomOf="@+id/button_Community" />
+
+    <Button
+        android:id="@+id/button_Help"
+        android:layout_width="69dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="4dp"
+        android:text="Help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name1"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <Button
+        android:id="@+id/button_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginBottom="125dp"
+        android:text="Update User"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Friends" />
+
+
+</android.support.constraint.ConstraintLayout>
