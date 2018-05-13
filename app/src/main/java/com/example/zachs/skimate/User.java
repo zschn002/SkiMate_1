@@ -21,6 +21,7 @@ public class User extends AppCompatActivity {
     private Button mSave;
     private Button mBack;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +41,17 @@ public class User extends AppCompatActivity {
                 Toast.makeText(User.this,
                         R.string.user_toast,
                         Toast.LENGTH_SHORT).show();
+
+
+
                 //Connect to Database
                 //Save credentials for user
 
             }
         });
+
+
+
 
 
         mBack= (Button) findViewById(R.id.BackButton);
