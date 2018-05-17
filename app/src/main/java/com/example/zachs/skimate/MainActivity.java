@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mFriends;
     private Button mHelp;
     private Button mProfile;
-    private Button mUser;
+    //private Button mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
