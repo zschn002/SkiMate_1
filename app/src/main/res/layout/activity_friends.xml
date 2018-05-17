@@ -10,6 +10,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="@string/friends_hello"/>
+        android:text="@string/friends_hello"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/textView_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your list of friends would show up here."
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="120dp" />
 
 </android.support.constraint.ConstraintLayout>

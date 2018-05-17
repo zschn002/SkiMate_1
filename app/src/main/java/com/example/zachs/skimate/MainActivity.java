@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.zachs.skimate.model.User;
+
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class MainActivity extends AppCompatActivity {
@@ -65,30 +67,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        mHelp = (Button) findViewById(R.id.button_Help);
-        mHelp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        R.string.help_toast,
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
 
-
-        mProfile = (Button) findViewById(R.id.button_Profile);
-        mProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,
-                        R.string.profile_toast,
-                        Toast.LENGTH_SHORT).show();
-
-                Intent i1 = new Intent (MainActivity.this, User.class);
-                startActivity(i1);
-
-            }
-        });
 
 
 
