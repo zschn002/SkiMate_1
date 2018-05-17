@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Mountain extends AppCompatActivity {
+public class Mountain extends AppCompatActivity{
 
     private Button mWhiteface;
     private Button mBeartown;
@@ -27,9 +27,7 @@ public class Mountain extends AppCompatActivity {
         mWhiteface.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Whiteface Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, Whiteface.class);
                 startActivity(i);
@@ -40,9 +38,7 @@ public class Mountain extends AppCompatActivity {
         mBeartown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Beartown Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, Beartown.class);
                 startActivity(i);
@@ -53,9 +49,7 @@ public class Mountain extends AppCompatActivity {
         mTitus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Titus Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, Titus.class);
                 startActivity(i);
@@ -66,9 +60,7 @@ public class Mountain extends AppCompatActivity {
         mStowe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Stowe Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, Stowe.class);
                 startActivity(i);
@@ -79,9 +71,7 @@ public class Mountain extends AppCompatActivity {
         mGore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Gore Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, Gore.class);
                 startActivity(i);
@@ -92,9 +82,7 @@ public class Mountain extends AppCompatActivity {
         mSugarBush.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Sugar Bush Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, SugarBush.class);
                 startActivity(i);
@@ -105,9 +93,7 @@ public class Mountain extends AppCompatActivity {
         mJaysPeak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Jay Peak Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, JayPeak.class);
                 startActivity(i);
@@ -118,9 +104,7 @@ public class Mountain extends AppCompatActivity {
         mKillington.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Mountain.this,
-                        "Moving to Killington Mountain Page",
-                        Toast.LENGTH_SHORT).show();
+
 
                 Intent i = new Intent(Mountain.this, Killington.class);
                 startActivity(i);

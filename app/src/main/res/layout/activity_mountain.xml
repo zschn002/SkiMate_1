@@ -93,7 +93,7 @@
         android:id="@+id/button_sugarBush"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sugar Bush"
+        android:text="Sugarbush"
         app:layout_constraintBottom_toTopOf="@+id/button_jayPeak"
         app:layout_constraintEnd_toEndOf="@+id/button_jayPeak"
         app:layout_constraintEnd_toStartOf="@+id/button_gore"

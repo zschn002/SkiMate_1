@@ -26,6 +26,15 @@
         <activity android:name=".Community" />
         <activity android:name=".Friends" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".Whiteface" />
+        <activity android:name=".JayPeak" />
+        <activity android:name=".Killington" />
+        <activity android:name=".Beartown" />
+        <activity android:name=".Gore" />
+        <activity android:name=".Stowe" />
+        <activity android:name=".SugarBush" />
+        <activity android:name=".Titus" />
+
 
         <activity android:name=".User" />
     </application>

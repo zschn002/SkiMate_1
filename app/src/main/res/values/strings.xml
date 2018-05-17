@@ -41,11 +41,30 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
+    <string name="permission_rationale">Contacts permissions are needed for providing email
+        completions.</string>
     <string name= "Signup">Sign up</string>
 
-    </string>
+
+    //Mountain Buttons
+    <string name="button_whiteface">Whiteface</string>
+    <string name="button_titus">Titus</string>
+    <string name="button_sugarBush">Sugarbush</string>
+    <string name="button_stowe">Stowe</string>
+    <string name="button_killington">Killington</string>
+    <string name="button_jayPeak">Jay Peak</string>
+    <string name="button_gore">Gore</string>
+    <string name="button_beartown">Beartown</string>
+
+    //Mountain Back Buttons
+    <string name="button_backWhiteface">Back</string>
+    <string name="button_backTitus">Back</string>
+    <string name="button_backSugarbush">Back</string>
+    <string name="button_backStowe">Back</string>
+    <string name="button_backKillington">Back</string>
+    <string name="button_backJayPeak">Back</string>
+    <string name="button_backGore">Back</string>
+    <string name="button_backBeartown">Back</string>
 
 
 </resources>
