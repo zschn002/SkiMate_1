@@ -9,16 +9,17 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="337dp"
-        android:layout_height="74dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="21dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
         android:layout_marginTop="5dp"
         android:padding="24dp"
         android:text="@string/mountain_hello"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,100 +27,117 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
-        android:text="Select a Mountain for Information"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="20dp"
+        android:text="Search a Mountain for Information"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_beartown"
+        app:layout_constraintBottom_toTopOf="@+id/editTextInput"
+        app:layout_constraintEnd_toEndOf="@+id/editTextInput" />
+
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="158dp"
+        android:hint="Which mountain?.."
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Search"
+        android:onClick="onSearchClick"
+        app:layout_constraintEnd_toEndOf="@+id/editTextInput"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInput" />
+
 
     <Button
         android:id="@+id/button_whiteface"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="187dp"
         android:text="Whiteface"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button_titus"
-        app:layout_constraintStart_toStartOf="@+id/button_titus"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/button_titus" />
 
     <Button
         android:id="@+id/button_beartown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="14dp"
         android:text="Beartown"
-        app:layout_constraintBottom_toTopOf="@+id/button_stowe"
-        app:layout_constraintEnd_toEndOf="@+id/button_stowe"
-        app:layout_constraintStart_toStartOf="@+id/button_stowe"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintBottom_toTopOf="@+id/button_jayPeak"
+        app:layout_constraintEnd_toEndOf="@+id/button_jayPeak"
+        app:layout_constraintStart_toStartOf="@+id/button_jayPeak" />
 
     <Button
         android:id="@+id/button_stowe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="12dp"
         android:text="Stowe"
-        app:layout_constraintBottom_toTopOf="@+id/button_gore"
-        app:layout_constraintEnd_toEndOf="@+id/button_gore"
-        app:layout_constraintStart_toStartOf="@+id/button_gore"
-        app:layout_constraintTop_toBottomOf="@+id/button_beartown" />
+        app:layout_constraintBottom_toTopOf="@+id/button_beartown"
+        app:layout_constraintEnd_toEndOf="@+id/button_beartown"
+        app:layout_constraintStart_toStartOf="@+id/button_beartown" />
 
     <Button
         android:id="@+id/button_titus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:text="Titus"
-        app:layout_constraintEnd_toEndOf="@+id/button_sugarBush"
-        app:layout_constraintStart_toStartOf="@+id/button_sugarBush"
+        app:layout_constraintEnd_toEndOf="@+id/button_gore"
+        app:layout_constraintStart_toStartOf="@+id/button_gore"
         app:layout_constraintTop_toBottomOf="@+id/button_whiteface" />
 
     <Button
         android:id="@+id/button_gore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="12dp"
         android:text="Gore"
-        app:layout_constraintBottom_toTopOf="@+id/button_jayPeak"
-        app:layout_constraintEnd_toEndOf="@+id/button_killington"
-        app:layout_constraintStart_toStartOf="@+id/button_killington"
-        app:layout_constraintTop_toBottomOf="@+id/button_stowe" />
+        app:layout_constraintEnd_toEndOf="@+id/button_sugarBush"
+        app:layout_constraintStart_toStartOf="@+id/button_sugarBush"
+        app:layout_constraintTop_toBottomOf="@+id/button_titus" />
 
     <Button
         android:id="@+id/button_sugarBush"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="14dp"
         android:text="Sugarbush"
-        app:layout_constraintEnd_toEndOf="@+id/button_jayPeak"
-        app:layout_constraintStart_toStartOf="@+id/button_jayPeak"
-        app:layout_constraintTop_toBottomOf="@+id/button_titus" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_gore" />
 
     <Button
         android:id="@+id/button_jayPeak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginStart="6dp"
+        android:layout_marginEnd="54dp"
         android:text="Jay Peak"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_killington"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_gore" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_sugarBush" />
 
     <Button
         android:id="@+id/button_killington"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="18dp"
         android:text="Killington"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_jayPeak" />
+        app:layout_constraintBottom_toTopOf="@+id/button_stowe"
+        app:layout_constraintEnd_toEndOf="@+id/button_stowe"
+        app:layout_constraintStart_toStartOf="@+id/button_stowe" />
+
 
 </android.support.constraint.ConstraintLayout>

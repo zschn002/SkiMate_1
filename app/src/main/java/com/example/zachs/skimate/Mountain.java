@@ -1,10 +1,12 @@
 package com.example.zachs.skimate;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class Mountain extends AppCompatActivity{
@@ -17,11 +19,15 @@ public class Mountain extends AppCompatActivity{
     private Button mJaysPeak;
     private Button mGore;
     private Button mSugarBush;
+    private EditText editTextInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mountain);
+        editTextInput = (EditText) findViewById(R.id.editTextInput);
+
+
 
         mWhiteface = (Button) findViewById(R.id.button_whiteface);
         mWhiteface.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +116,23 @@ public class Mountain extends AppCompatActivity{
                 startActivity(i);
             }
         });
+
+
+
+    }
+
+    public void onSearchClick(View v) {
+        try {
+            Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+            String term = editTextInput.getText().toString();
+            intent.putExtra(SearchManager.QUERY, term);
+            startActivity(intent);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
     }
 }
+
+
 
