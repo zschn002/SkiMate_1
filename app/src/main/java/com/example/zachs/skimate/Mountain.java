@@ -121,6 +121,7 @@ public class Mountain extends AppCompatActivity{
 
     }
 
+    //Google search function
     public void onSearchClick(View v) {
         try {
             Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
@@ -128,7 +129,7 @@ public class Mountain extends AppCompatActivity{
             intent.putExtra(SearchManager.QUERY, term);
             startActivity(intent);
         } catch (Exception e) {
-            // TODO: handle exception
+
         }
 
     }
